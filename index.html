@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MARINA – Intime Muse</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600&family=Lora:ital,wght@0,400;0,500;1,400;1,500&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+              body: ['"Lora"', 'serif'],
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              burgundy: {
+                50: '#fdf2f2',
+                100: '#fbe3e3',
+                200: '#f7cdcd',
+                300: '#f1a9a9',
+                400: '#e47979',
+                500: '#d24e4e',
+                600: '#bb3838',
+                700: '#9d2d2d',
+                800: '#822828',
+                900: '#6d2525',
+                950: '#4c0519',
+              },
+              gold: {
+                200: '#fef3c7',
+                300: '#fde68a',
+                400: '#facc15',
+                500: '#eab308',
+              }
+            },
+            animation: {
+              'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+              'fade-in-up': 'fadeInUp 0.6s ease-out forwards',
+              'float': 'float 6s ease-in-out infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(15px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-10px)' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .font-serif { font-family: 'Playfair Display', serif; }
+      .font-body { font-family: 'Lora', serif; }
+      
+      ::-webkit-scrollbar { width: 5px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #4c0519; border-radius: 10px; }
+      
+      .glass {
+        background: rgba(15, 23, 42, 0.8);
+        backdrop-filter: blur(16px);
+        border: 1px solid rgba(254, 243, 199, 0.15);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.6.0/",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-[#020617] text-stone-200 overflow-hidden">
+    <div id="root"></div>
+  </body>
+</html>

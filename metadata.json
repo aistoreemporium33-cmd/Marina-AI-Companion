@@ -1,0 +1,8 @@
+{
+  "name": "MARINA – KI-Begleiter",
+  "description": "Ein immersiver, emotionaler KI-Begleiter mit multimodaler Interaktion (Chat, TTS, Bildgenerierung).",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
